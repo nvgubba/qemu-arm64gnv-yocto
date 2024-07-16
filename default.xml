@@ -3,7 +3,11 @@
   <default sync-j="4" revision="scarthgap"/>
 
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/nvgubba" name="gnv"/>
 
   <project name="poky" remote="yocto" path="sources/poky"/>
+  <project name="qemu-arm64gnv-yocto" remote="gnv" path="sources/base">
+      <copyfile dest="setup-environment" src="scripts/setup-environment"/>
+  </project>
 
   </manifest>
