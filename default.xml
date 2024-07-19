@@ -9,6 +9,6 @@
   <project name="qemu-arm64gnv-yocto" remote="gnv" path="sources/base">
       <copyfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
-  <project name="meta-gnv" remote="yocto" path="sources/meta-gnv"/>
+  <project name="meta-gnv" remote="gnv" path="sources/meta-gnv"/>
 
   </manifest>
